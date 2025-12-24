@@ -52,11 +52,11 @@ def parse_args():
 
     parser.add_argument(
         "-e",
-        "--epocs",
+        "--epochs",
         type=int,
         required=False,
         default=2000,
-        help="Number of epocs to train the model.",
+        help="Number of epochs to train the model.",
     )
 
     parser.add_argument(
@@ -145,7 +145,7 @@ def main():
     model = MODEL_LIBRARY[args.model_name]()
 
     dataloaders = get_dataloaders()
-    epochs = args.epocs
+    epochs = args.epochs
     optimizer = torch.optim.Adam(model.parameters(), lr=args.learning_rate)
     warmup_scheduler = warmup.LinearWarmup(optimizer, args.warmup_period)
     device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
