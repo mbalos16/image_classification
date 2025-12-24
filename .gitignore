@@ -8,5 +8,8 @@ wheels/
 
 # Virtual environments
 .venv
+
+# Artifacts
 images/
 runs/
+*.png
