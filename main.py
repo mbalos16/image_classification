@@ -157,10 +157,10 @@ def main():
     month = time.gmtime().tm_mon
     day = time.gmtime().tm_mday
     model_log_name = f"{year}_{month}_{day}_{args.model_name}"
+    print(summary(model))
     writer = SummaryWriter(
         os.path.join("runs", model_log_name)
     )  # Tensor Board Logs Class
-
     train(
         epochs=epochs,
         dataloaders=dataloaders,
