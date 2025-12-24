@@ -22,13 +22,13 @@ The architectures explored within this project are:
 * DenseNet
 * Vit
 
-Read the full article on Medium: [CON(e)VOLUTION]().
+Read the full article on Medium: [CON(e)VOLUTION](https://medium.com/@mariabalos16/con-e-volution-a-walkthrough-from-lenet-to-vision-transformers-4f319bb0b2b7).
 
 
 ## Notes you might want to know about this project
 
 * Models are implemented in PyTorch.
-* Experiments use the [Neu Surface Defects Dataset]().
+* Experiments use the [Neu Surface Defects Dataset](https://www.kaggle.com/datasets/kaustubhdikshit/neu-surface-defect-database).
 * AI tools were used for proofreading; all code and content are original.
 
 
